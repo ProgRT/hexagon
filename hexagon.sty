@@ -1,0 +1,13 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{hexagon}[2019/11/17 Librairie pour dessiner des hexagone]
+\RequirePackage{tikz}
+
+\newcommand{\hexagon}[1]{%
+	++(-90:#1)
+	-- ++(30:#1)
+	-- ++(90:#1)
+	-- ++(150:#1)
+	-- ++(210:#1)
+	-- ++(270:#1)
+	-- cycle
+}
